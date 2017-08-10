@@ -1,0 +1,4 @@
+baseurl: "/"
+languageCode: "en-us"
+title: "Zamu CMS"
+metaDataFormat: "yaml"
