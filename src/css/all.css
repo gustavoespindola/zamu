@@ -85,9 +85,6 @@ ul, li, a{
 	text-decoration: none;
 }
 
-body{
-	padding-top: 0rem;
-}
 /**/
 .app{
 	padding-top: 94px;
@@ -153,6 +150,11 @@ body{
 		background-size: cover;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in;
+		-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+			 -moz-animation: fadein 2s; /* Firefox < 16 */
+				-ms-animation: fadein 2s; /* Internet Explorer */
+				 -o-animation: fadein 2s; /* Opera < 12.1 */
+						animation: fadein 2s;
 		&:after{
 			content: '';
 			position: absolute;
@@ -222,7 +224,7 @@ a.button.cta {
 }
 
 .contact{
-	padding: 0 2rem 4rem 2rem ;
+	padding: 4em 2rem ;
 	background-color: white;
 	form#contact {
 		text-align: center;
@@ -261,7 +263,6 @@ a.button.cta {
 }
 
 .gallery{
-	padding-bottom: 4rem;
 	position: relative;
 	overflow: hidden;
 	.flickity-page-dots{
@@ -351,16 +352,6 @@ a.button.cta {
 		max-width: 30rem;
 		margin: 0 auto;
 	}
-}
-
-
-body{
-	display: none;
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-		 -moz-animation: fadein 2s; /* Firefox < 16 */
-			-ms-animation: fadein 2s; /* Internet Explorer */
-			 -o-animation: fadein 2s; /* Opera < 12.1 */
-					animation: fadein 2s;
 }
 
 @keyframes fadein {
