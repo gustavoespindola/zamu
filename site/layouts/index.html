@@ -1,68 +1,49 @@
 {{ partial "head" . }}
 <div class="app">
   <section class="hero">
-    <div class="background-image" style="background-image: url('https://images.unsplash.com/photo-1490013616775-3ca8865fb129?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');"></div>
+    <div class="background-image" style="background-image: url('images/Zamu__gallery-29.jpg');"></div>
     <div class="inner">
-    <h3 class="eyebrow">LOREM IPSUM</h3>
-    <h1>Emergencias Publicitarias, impresiones de alta y mediana resolución en tiempo record</p>
+    <h3 class="eyebrow">COMPROMISO</h3>
+    <h1>Resolvemos toda urgencia publicitaria con gran calidad de impresión y logística de primer nivel</h1>
+    <a href="#contacto" class="button cta">Contáctanos</a>
     </div>
   </section>
   <section id="servicios" class="explain">
     <div class="inner">
       <div class="center">
-        <h3>LOREM IPSUM</h3>
-        <p>Contamos con stock de materiales permanentes, máquinas de impresión y personal altamente capacitado, contactenos.</p>
+        <h3>ZAMU PUBLICIDAD</h3>
+        <p>Contamos con stock de materiales permanentes, máquinas de impresión y personal altamente capacitado.</p>
       </div>
     </div>
   </section>
-  <section id="gallery" class="gallery">
-    
-    <div class="inner">
 
-    <div class="row one">
-      <div class="image"><img src="https://images.unsplash.com/photo-1451928803901-7357a9e01215?dpr=1&auto=format&fit=crop&w=1280&h=720&q=10&cs=tinysrgb&crop=" alt=""></div>
-
-      <div class="image"><img src="https://images.unsplash.com/photo-1464809185700-7d3c5ed9c5b0?dpr=1&auto=formatq=10&cs=tinysrgb&crop=" alt=""></div>
-
-      <div class="image"><img src="https://images.unsplash.com/photo-1485964793191-d70862c81ea8?dpr=1&auto=format&fit=crop&q=10&cs=tinysrgb&crop=" alt=""></div>
-
-      <div class="image"><img src="https://images.unsplash.com/photo-1492485840844-0318fc72945e?dpr=1&auto=format&q=10&cs=tinysrgb&crop=" alt=""></div>
-    </div>
-
-    <div class="row two">
-
-<div class="image"><img src="https://images.unsplash.com/photo-1485964793191-d70862c81ea8?dpr=1&auto=format&fit=crop&q=10&cs=tinysrgb&crop=" alt=""></div>
-    
-      <div class="image"><img src="https://images.unsplash.com/reserve/eNu5TtyHRnWf9627TvZN_IMG_7791.JPG?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt=""></div>
-      
-      <div class="image"><img src="https://images.unsplash.com/photo-1492485840844-0318fc72945e?dpr=1&auto=format&q=10&cs=tinysrgb&crop=" alt=""></div>
-
-<div class="image"><img src="https://images.unsplash.com/photo-1451928803901-7357a9e01215?dpr=1&auto=format&fit=crop&w=1280&h=720&q=10&cs=tinysrgb&crop=" alt=""></div>
-
-    </div>
+  <section id="gallery" class="gallery" >
+    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": false,"initialIndex": 2 }'>
+    {{ partial "gallery" . }}
   </div>
-
   </section>
+
   <section id="contacto" class="contact">
     <div class="inner">
     <div class="container">  
-      <form id="contact" action="" method="post">
-        <h3>Quick Contact</h3>
-        <h4>Contact us today, and get reply with in 24 hours!</h4>
+      <form name="contact" action="contact" netlify>
+
+        <h3>Contacto rápido</h3>
+        <h4>Conversemos, escríbenos y consigue respuesta en 24 horas</h4>
         <fieldset>
-          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          <input placeholder="Nombre" type="text" tabindex="1" required>
         </fieldset>
         <fieldset>
-          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          <input placeholder="Email" type="email" tabindex="2" required>
         </fieldset>
         <fieldset>
-          <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+          <input placeholder="Teléfono" type="tel" tabindex="3" required>
         </fieldset>
         <fieldset>
-          <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+          <textarea placeholder="Escribe tu mensaje...." tabindex="5" required></textarea>
         </fieldset>
         <fieldset>
-          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Enviar</button>
         </fieldset>
       </form>
      
