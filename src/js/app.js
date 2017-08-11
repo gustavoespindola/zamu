@@ -4,10 +4,10 @@ $('.background-image').show();
 
 $("#contact").submit(function(e) {
   e.preventDefault();
-
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("Gracias, te contactaremos en breve!");
+		alert("Gracias, te contactaremos en breve!");
+		this.reset();
   });
 });
 
