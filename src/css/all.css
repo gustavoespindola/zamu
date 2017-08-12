@@ -342,6 +342,24 @@ a.button.cta {
 	.map-container iframe.clicked{
 		pointer-events: auto;
 	}
+	.mapimage {
+	  background-size: cover;
+	  background-position: center;
+	  height: 460px;
+	  width: 100%;
+	  position: relative;
+	  overflow: hidden;
+	  display: block;
+	  background-repeat: no-repeat;
+	}
+	.gotomap{
+		display: block;
+		text-align: center;
+		padding: 2rem;
+		font-size: 1.1rem;
+		color: #000;
+		position: relative;
+	}
 }
 
 .footer {
