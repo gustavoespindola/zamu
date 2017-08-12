@@ -126,6 +126,11 @@ ul, li, a{
 			text-transform: uppercase;
 			a{
 				color:gray;
+				transition: all .25s ease;
+				&:hover{
+					color: black;
+					transition: all .25s ease;
+				}
 			}
 		}
 	}
@@ -375,9 +380,6 @@ a.button.cta {
 				text-align: right;
 				li {
 				padding: 0 .2rem;
-				a{
-					// font-size: .8rem;
-				}
 				}
 			}
         .logotype{
