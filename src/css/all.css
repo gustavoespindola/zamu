@@ -283,8 +283,9 @@ a.button.cta {
 		padding: 3em 0 0
 	}
 .carousel-cell {
-	border-radius: 5px;
+	border-radius: 3px;
 	position: relative;
+	display: inline-block;
   img {
 		width:  auto;
 		height: 320px;
