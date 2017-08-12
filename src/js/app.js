@@ -14,6 +14,6 @@ $("#contact").submit(function(e) {
 $(document).on('click', '.navbar a, .button.cta', function(event){
     event.preventDefault();
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 94
+        scrollTop: $( $.attr(this, 'href') ).offset().top - $('.navbar').height()
     }, 500);
 });

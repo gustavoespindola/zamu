@@ -122,6 +122,8 @@ ul, li, a{
 			margin: 0;
 			list-style: none;
 			display: inline-block;
+			font-size: .9rem;
+			text-transform: uppercase;
 			a{
 				color:gray;
 			}
@@ -224,7 +226,7 @@ a.button.cta {
 }
 
 .contact{
-	padding: 4em 2rem ;
+	padding: 0em 2rem 4rem;
 	background-color: white;
 	form#contact {
 		text-align: center;
@@ -270,7 +272,7 @@ a.button.cta {
 		display: none;
 	}
 	.main-carousel {
-	  padding: 0rem 2rem 6rem;
+	  padding: 0rem 2rem 8rem;
 	}
 	.flickity-viewport{
 		overflow: inherit;
@@ -292,13 +294,13 @@ a.button.cta {
 		overflow: hidden;
   		transition: transform .5s ease,box-shadow .5s ease;
 		border: 1px solid #f2f2f2;
-		transform: scale(.9);
+		transform: scale(.95);
 		opacity: .6;
   }
   &.is-selected {
   	img{
   		box-shadow: 0 6px 24px 0 rgba(0,0,0,.1);
-  		transform: scale(1.2);
+  		transform: scale(1.1);
   		z-index: 9;
   		transition: transform .5s ease, box-shadow .5s ease;
   		border: 0px solid #f2f2f2;
@@ -355,6 +357,55 @@ a.button.cta {
 	}
 }
 
+@media only screen and (max-width: 724px) {
+		html{
+			font-size: .8rem;
+		}
+		.app{
+			padding-top: 67px;
+		}
+		.hero {
+			padding: 2em 1rem;
+			h1{
+				font-size: 2rem;
+			}
+		}
+    .navbar {
+			ul{
+				text-align: right;
+				li {
+				padding: 0 .2rem;
+				a{
+					// font-size: .8rem;
+				}
+				}
+			}
+        .logotype{
+	        	img{
+	        		max-width: 80px;
+	        		padding-right: 1rem;
+	        	}
+        }
+    }
+    .footer{
+    	padding-right: 1rem;
+    	padding-left: 1rem;
+    }
+	.explain{
+		.inner{
+			p{
+				font-size: 1.5rem;
+				line-height: 1.5;
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+		}
+	}
+	.contact{
+		padding-top: 2rem;
+	}
+}
+
 @keyframes fadein {
 		from { opacity: 0; }
 		to   { opacity: 1; }
@@ -383,3 +434,4 @@ a.button.cta {
 		from { opacity: 0; }
 		to   { opacity: 1; }
 }
+
